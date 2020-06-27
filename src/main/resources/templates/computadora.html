@@ -34,7 +34,7 @@
 					<li class="nav-item active"><a class="nav-link" href="#">Home
 							<span class="sr-only">(current)</span>
 					</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Hardware</a>
+					<li class="nav-item"><a class="nav-link" th:href="@{/hardware}">Hardware</a>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="#">Software</a>
 					</li>
@@ -70,16 +70,49 @@
 					</a>
 				</div>
 	</div>
+	
+	
 	<div class="container">
+		<br>
 		<div class="row">
-			<div class="col-md-12">
-				<h3 class="text-center">La computadora</h3>
+		
+			<div class="col-md-8 col-xs-8 text-justify">
+			<h3 class="text-center">La computadora</h3>
+				<p>La computadora (del inglés: computer y este del latín: computare, ‘calcular’), también denominada computador u ordenador (del francés: ordinateur; y este del latín: ordinator), es una máquina digital que ejecuta comandos para convertirlos en datos convenientes y útiles que posteriormente se envían a las unidades de salida. Un computador está formado físicamente por numerosos circuitos integrados y muchos componentes de apoyo, extensión y accesorios, que en conjunto pueden ejecutar tareas diversas con suma rapidez y bajo el control de un programa (software).</p>
+				<p>Dos partes esenciales la constituyen, el hardware, que es su estructura física (circuitos electrónicos, cables, gabinete, teclado, etc.), y el software, que es su parte intangible (programas, datos, información, señales digitales para uso interno, etc.).</p>
+				<p>Desde el punto de vista funcional es una máquina que posee, al menos, una unidad central de procesamiento, una memoria principal y algún periférico o dispositivo de entrada y otro de salida. Los dispositivos de entrada permiten el ingreso de datos, la CPU se encarga de su procesamiento (operaciones aritmético-lógicas) y los dispositivos de salida los comunican a otros medios. Es así, que la computadora recibe datos, los procesa y emite la información resultante, la que luego puede ser interpretada, almacenada, transmitida a otra máquina o dispositivo o sencillamente impresa; todo ello a criterio de un operador o usuario y bajo el control de un programa.</p>
+				<p>El hecho de que sea programable le permite realizar una gran variedad de tareas, esto la convierte en una máquina de propósitos generales (a diferencia, por ejemplo, de una calculadora cuyo único propósito es calcular limitadamente). Es así que, sobre la base de datos de entrada, puede realizar operaciones y resolución de problemas en las más diversas áreas del quehacer humano (administrativas, científicas, de diseño, ingeniería, medicina, comunicaciones, música, etc), incluso muchas cuestiones que directamente no serían resolubles o posibles sin su intervención.</p>
+				<p>Básicamente, la capacidad de una computadora depende de sus componentes hardware, en tanto que la diversidad de tareas radica mayormente en el software que admita ejecutar y contenga instalado.</p>
+				<p>Si bien esta máquina puede ser de dos tipos, computadora analógica o sistema digital, el primer tipo es usado para pocos y muy específicos propósitos; la más difundida, utilizada y conocida es la computadora digital (de propósitos generales); de tal modo que en términos generales (incluso populares), cuando se habla de «la computadora» se está refiriendo a una computadora digital. Las hay de arquitectura mixta, llamadas computadoras híbridas, siendo también estas de propósitos especiales.</p>
+			</div>	
+			<br>
+			<div class="col-md-4 col-xs-12">
+			<div class="row">
+			<div class=" col-12">
+				<div class="card" style="width: 18rem;">
+				  <img th:src="@{/img/hardware.jpg}" class="card-img-top" alt="...">
+				  <div class="card-body text-center">
+				    <h5 class="card-title">Hardware</h5>
+				    <p class="card-text">Componentes físicos de la computadora</p>
+				    <a th:href="@{/hardware/}" class="btn btn-primary">Ver mas información</a>
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-12 py-2">
+				<div class="card" style="width: 18rem;">
+				  <img th:src="@{/img/software.jpg}" class="card-img-top" alt="...">
+				  <div class="card-body text-center">
+				    <h5 class="card-title">Software</h5>
+				    <p class="card-text">Programas que dan funcionalidad a la computadora</p>
+				    <a href="#" class="btn btn-primary">Ver mas información</a>
+				  </div>
+				</div>
+			</div>
+			
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<p>Lorem</p>
-			</div>		
+				
 		</div>
 	</div>
 
