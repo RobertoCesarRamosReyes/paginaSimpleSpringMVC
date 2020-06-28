@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description"
+	content="Página informativa hecha con Spring Framework">
+<meta name="author" content="Roberto Cesar Ramos Reyes">
+
+<title th:text="${titulo}"></title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" type="text/css"
+	th:href="@{/bootstrap/css/bootstrap.min.css}">
+
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+		<div class="container">
+			<a class="navbar-brand" th:href="@{../index}">La PC y sus partes</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a class="nav-link" th:href="@{/}">Home
+							<span class="sr-only">(current)</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link"
+						th:href="@{/hardware}">Hardware</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Software</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="#">Extras</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+
+	<div class="container">
+		<br>
+		<div class="row">
+			<div class="col-md-12 col-xs-12 text-justify ">
+				<h3 class="text-center " th:text="${titulo}"></h3>
+				<p class="text-justify">El hardware de almacenamiento sirve para
+					almacenar permanentemente información y programas que la
+					computadora deba recuperar en algún momento. Los dos tipos
+					principales de dispositivos de almacenamiento son las unidades de
+					disco y la memoria. Existen varios tipos de discos: duros,
+					flexibles, magneto-ópticos y compactos. Las unidades de disco duro
+					almacenan información en partículas magnéticas integradas en un
+					disco. Las unidades de disco duro, que suelen ser una parte
+					permanente de la computadora, pueden almacenar grandes cantidades
+					de información y recuperarla muy rápidamente. Las unidades de disco
+					flexible también almacenan información en partículas magnéticas
+					integradas en discos intercambiables, que de hecho pueden ser
+					flexibles o rígidos.</p>
+			</div>
+			<br>
+
+		</div>
+		<!-- Page Content -->
+
+		<!-- CARDS -->
+		<div class="row">
+			<div class="card mb-3">
+				<div class="row no-gutters">
+					<div class="col-md-2">
+						<img th:src="@{/img/hardware/17.jpg}" style="max-width: 80%"
+							class="card-img" alt="...">
+					</div>
+					<div class="col-md-10">
+						<div class="card-body">
+							<h5 class="card-title">HDD</h5>
+							<p class="card-text">En informática, la unidad de disco duro
+								o unidad de disco rígido (en inglés: hard disk drive, HDD) es un
+								dispositivo de almacenamiento de datos que emplea un sistema de
+								grabación magnética para almacenar y recuperar archivos
+								digitales. Se compone de uno o más platos o discos rígidos,
+								recubiertos con material magnético y unido por un mismo eje que
+								gira a gran velocidad dentro de una caja metálica sellada.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3">
+				<div class="row no-gutters">
+					<div class="col-md-10">
+						<div class="card-body">
+							<h5 class="card-title">Memorias USB</h5>
+							<p class="card-text">La memoria USB, conocida también con los nombres locales: lápiz de memoria, dedo, pincho, lápiz USB, memoria externa, pen drive, memocápsula, memorín o llave maya ​ es un tipo de dispositivo de almacenamiento de datos que utiliza circuitos de estado sólido para guardar datos e información.​</p>
+						</div>
+					</div>
+					<div class="col-md-2 mr-auto">
+						<img th:src="@{/img/hardware/18.jpg}" style="max-width: 80%"
+							class="card-img" alt="...">
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3">
+				<div class="row no-gutters">
+					<div class="col-md-2">
+						<img th:src="@{/img/hardware/11.jpg}" style="max-width: 80%"
+							class="card-img" alt="...">
+					</div>
+					<div class="col-md-10">
+						<div class="card-body">
+							<h5 class="card-title">Discos ópticos</h5>
+							<p class="card-text">Un Disco óptico es un medio de almacenamiento de datos de tipo óptico, que consiste en un disco circular en el cual la información se codifica, guarda y almacena haciendo unos surcos microscópicos con un láser sobre una de las caras planas que lo componen.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3">
+				<div class="row no-gutters">
+					<div class="col-md-10">
+						<div class="card-body">
+							<h5 class="card-title">Discos duros externos</h5>
+							<p class="card-text">Un disco duro portátil o disco duro externo es una unidad de disco duro que es fácil de instalar y transportar de una computadora a otra, sin necesidad de consumir constantemente energía eléctrica o batería o algún otro recurso.</p>
+						</div>
+					</div>
+					<div class="col-md-2 py-4">
+						<img th:src="@{/img/hardware/19.jpg}" style="max-width: 80%"
+							class="card-img" alt="...">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Bootstrap core JavaScript -->
+	<script th:src="@{/jquery/jquery.slim.min.js}"></script>
+	<script th:src="@{/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+</body>
+
+</html>

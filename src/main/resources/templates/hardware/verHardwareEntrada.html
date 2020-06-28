@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description"
+	content="Página informativa hecha con Spring Framework">
+<meta name="author" content="Roberto Cesar Ramos Reyes">
+
+<title>Hardware de entrada</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" type="text/css"
+	th:href="@{/bootstrap/css/bootstrap.min.css}">
+
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+		<div class="container">
+			<a class="navbar-brand" th:href="@{../index}">La PC y sus partes</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a class="nav-link" th:href="@{/}">Home
+							<span class="sr-only">(current)</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link"
+						th:href="@{/hardware}">Hardware</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Software</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="#">Extras</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+
+	<div class="container">
+		<br>
+		<div class="row">
+			<div class="col-md-12 col-xs-12 text-justify ">
+				<h3 class="text-center ">Hardware de entrada</h3>
+				<p class="text-justify">Los dispositivos de entrada son aquellos
+					equipos y componentes que permiten ingresar información a la unidad
+					de procesamiento; algunos ejemplos conocidos por todos son el
+					teclado, el mouse (también llamado ratón), el escáner, la cámara
+					web (webcam), el lápiz óptico y el micrófono; la forma en la que el
+					usuario interactúa con ellos es muy variada y tiene, en cada caso,
+					un propósito diferente, que puede ser la digitalización de un texto
+					o de una imagen, la captura de una secuencia de vídeo o la
+					grabación de una canción, entre tantas otras posibilidades.</p>
+			</div>
+			<br>
+
+		</div>
+		<!-- Page Content -->
+
+		<!-- CARDS -->
+		<div class="row">
+			<div class="card mb-3">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<img th:src="@{/img/hardware/1.jpg}" style="max-width: 80%"
+							class="card-img" alt="...">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">Teclado</h5>
+							<p class="card-text">En informática, un teclado es un
+								dispositivo o periférico de entrada, en parte inspirado en el
+								teclado de las máquinas de escribir, que utiliza un sistema de
+								botones o teclas, para que actúen como palancas mecánicas o
+								interruptores electrónicos que envían toda la información a la
+								computadora o al teléfono móvil.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3">
+				<div class="row no-gutters">
+					<div class="col-md-10">
+						<div class="card-body">
+							<h5 class="card-title">Mouse</h5>
+							<p class="card-text">El ratón o mouse (en inglés pronunciado
+								/maʊs/) es un dispositivo apuntador utilizado para facilitar el
+								manejo de un entorno gráfico en una computadora. Generalmente
+								está fabricado en plástico, y se utiliza con una de las manos.
+								Detecta su movimiento relativo en dos dimensiones por la
+								superficie plana en la que se apoya, reflejándose habitualmente
+								a través de un puntero, cursor o flecha en el monitor.</p>
+						</div>
+					</div>
+					<div class="col-md-2 mr-auto">
+						<img th:src="@{/img/hardware/2.jpg}" style="max-width: 80%"
+							class="card-img" alt="...">
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<img th:src="@{/img/hardware/13.jpg}" style="max-width: 50%"
+							class="card-img" alt="...">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">Microfono</h5>
+							<p class="card-text">Es un dispositivo de entrada de audio. Se pueden conectar a la computadora para grabar sonido o para comunicarse por internet con otras personas. Muchos equipos vienen con micrófonos incorporados dentro de la pantalla o monitor, especialmente los computadores portátiles.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3">
+				<div class="row no-gutters">
+					<div class="col-md-10">
+						<div class="card-body">
+							<h5 class="card-title">Scanner</h5>
+							<p class="card-text">Un escáner de ordenador (escáner proviene del idioma inglés scanner) es un periférico que se utiliza para "copiar", mediante el uso de la luz, imágenes impresas o documentos a formato digital (a color o a blanco y negro). El escáner nace en 1984 cuando Microtek crea el MS-200, el primer escáner blanco y negro que tenía una resolución de 200dpi. Este escáner fue desarrollado para Apple Macintosh. Los escáneres pueden tener accesorios como un alimentador de hojas automático o un adaptador para diapositivas y transparencias.</p>
+						</div>
+					</div>
+					<div class="col-md-2 py-4">
+						<img th:src="@{/img/hardware/8.jpg}" style="max-width: 80%"
+							class="card-img" alt="...">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Bootstrap core JavaScript -->
+	<script th:src="@{/jquery/jquery.slim.min.js}"></script>
+	<script th:src="@{/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+</body>
+
+</html>

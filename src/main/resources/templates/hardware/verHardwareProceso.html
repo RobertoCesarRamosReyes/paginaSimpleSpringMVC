@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description"
+	content="Página informativa hecha con Spring Framework">
+<meta name="author" content="Roberto Cesar Ramos Reyes">
+
+<title>Hardware de proceso</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" type="text/css"
+	th:href="@{/bootstrap/css/bootstrap.min.css}">
+
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+		<div class="container">
+			<a class="navbar-brand" th:href="@{../index}">La PC y sus partes</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a class="nav-link" th:href="@{/}">Home
+							<span class="sr-only">(current)</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link"
+						th:href="@{/hardware}">Hardware</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Software</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="#">Extras</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+
+	<div class="container">
+		<br>
+		<div class="row">
+			<div class="col-md-12 col-xs-12 text-justify ">
+				<h3 class="text-center ">Hardware de proceso</h3>
+				<p class="text-justify">Los dispositivos de procesamiento
+					informático son unidades que desempeñan un importante rol en las
+					operaciones de proceso de una computadora. Se utilizan para
+					procesar los datos, siguiendo las instrucciones de un programa.</p>
+				<p>El procesamiento es la función más importante de la
+					computadora, porque en esta fase se realiza la transformación de
+					datos en información útil, usando para ello muchos dispositivos de
+					procesamiento de la computadora.</p>
+			</div>
+			<br>
+
+		</div>
+		<!-- Page Content -->
+
+		<!-- CARDS -->
+		<div class="row">
+			<div class="card mb-3">
+				<div class="row no-gutters">
+					<div class="col-md-2">
+						<img th:src="@{/img/hardware/14.jpg}" style="max-width: 80%"
+							class="card-img" alt="...">
+					</div>
+					<div class="col-md-10">
+						<div class="card-body">
+							<h5 class="card-title">CPU</h5>
+							<p class="card-text">La unidad central de procesamiento o
+								unidad de procesamiento central (conocida por las siglas CPU,
+								del inglés: Central Processing Unit), es el hardware dentro de
+								un ordenador u otros dispositivos programables, que interpreta
+								las instrucciones de un programa informático mediante la
+								realización de las operaciones básicas aritméticas, lógicas y de
+								entrada/salida del sistema.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3">
+				<div class="row no-gutters">
+					<div class="col-md-10">
+						<div class="card-body">
+							<h5 class="card-title">Placa base</h5>
+							<p class="card-text">La placa base, también conocida como
+								tarjeta madre, placa madre o placa principal (motherboard o
+								mainboard en inglés), es una tarjeta de circuito impreso a la
+								que se conectan los componentes que constituyen la computadora.</p>
+						</div>
+					</div>
+					<div class="col-md-2 py-4">
+						<img th:src="@{/img/hardware/15.jpg}" style="max-width: 80%"
+							class="card-img" alt="...">
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3">
+				<div class="row no-gutters">
+					<div class="col-md-2">
+						<img th:src="@{/img/hardware/5.jpg}" style="max-width: 70%"
+							class="card-img" alt="...">
+					</div>
+					<div class="col-md-10">
+						<div class="card-body">
+							<h5 class="card-title">Gabinete</h5>
+							<p class="card-text">En el ámbito de la informática, el
+								gabinete es el armazón que contiene los principales componentes
+								de hardware de una computadora: su CPU, tarjeta madre,
+								microprocesador, memoria, disco rígido y unidades internas
+								(lector de CD o DVD, etc.). La principal función del gabinete es
+								proteger a estos componentes. Sin embargo, la computación ha
+								avanzado hacia el diseño artístico de gabinetes, que pasaron a
+								ser, además, un objeto decorativo.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Bootstrap core JavaScript -->
+	<script th:src="@{/jquery/jquery.slim.min.js}"></script>
+	<script th:src="@{/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+</body>
+
+</html>
