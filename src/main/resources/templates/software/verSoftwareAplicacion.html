@@ -36,8 +36,8 @@
 					</a></li>
 					<li class="nav-item"><a class="nav-link"
 						th:href="@{/hardware}">Hardware</a></li>
-					<li class="nav-item"><a class="nav-link" th:href="@{/software}">Software</a>
-					</li>
+					<li class="nav-item"><a class="nav-link"
+						th:href="@{/software}">Software</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Extras</a></li>
 				</ul>
 			</div>
@@ -51,7 +51,7 @@
 		<div class="row">
 			<div class="col-md-12 col-xs-12 text-justify ">
 				<h3 class="text-center " th:text="${titulo}"></h3>
-				<p class="text-justify">Son aquellos que permiten la interacción de la PC con el usuario o permiten que los datos generados por la computadora se dirijan al exterior por medio de dispositivos de almacenamiento. Algunos ejemplos de esta clase de HARDWARE son las impresoras, el monitor, los auriculares, los proyectores, los altavoces, entre otros.</p>
+				<p class="text-justify">El Software de Aplicación son los programas diseñados para o por los usuarios para facilitar la realización de tareas específicas en la computadora, como pueden ser las aplicaciones ofimáticas (procesador de texto, hoja de cálculo, programa de presentación, sistema de gestión de base de datos...), u otros tipos de software especializados como software médico, software educativo, editores de música, programas de contabilidad, etc.</p>
 			</div>
 			<br>
 
@@ -62,16 +62,14 @@
 		<div class="row">
 			<div class="card mb-3">
 				<div class="row no-gutters">
-					<div class="col-md-2">
-						<img th:src="@{/img/hardware/4.jpg}" style="max-width: 80%"
+					<div class="col-md-2 py-3">
+						<img th:src="@{/img/software/1.jpg}" style="max-width: 80%"
 							class="card-img" alt="...">
 					</div>
 					<div class="col-md-10">
 						<div class="card-body">
-							<h5 class="card-title">Monitor</h5>
-							<p class="card-text">El monitor de computadora (en Hispanoamérica) o monitor de ordenador o pantalla (en España) es el principal dispositivo de salida (interfaz), que muestra datos o información al usuario.
-También puede considerarse un periférico de entrada/salida si el monitor tiene pantalla táctil o multitáctil.
-</p>
+							<h5 class="card-title">Microsoft Word</h5>
+							<p class="card-text">Microsoft Word es un programa informático orientado al procesamiento de textos. Fue creado por la empresa Microsoft, y viene integrado de manera predeterminada en el paquete ofimático denominado Microsoft Office.</p>
 						</div>
 					</div>
 				</div>
@@ -80,26 +78,26 @@ También puede considerarse un periférico de entrada/salida si el monitor tiene
 				<div class="row no-gutters">
 					<div class="col-md-10">
 						<div class="card-body">
-							<h5 class="card-title">Impresora</h5>
-							<p class="card-text">Es el periférico que el ordenador utiliza para presentar información impresa en papel. Las impresoras fueron creadas antes que los monitores, estas eran utilizadas para presentar los cálculos en aquellos primitivos ordenadores.</p>
+							<h5 class="card-title">Microsoft Excel</h5>
+							<p class="card-text">Microsoft Excel es una hoja de cálculo desarrollada por Microsoft para Windows, macOS, Android e iOS. Cuenta con cálculo, herramientas gráficas, tablas calculares y un lenguaje de programación macro llamado Visual Basic para aplicaciones.</p>
 						</div>
 					</div>
-					<div class="col-md-2 mr-auto">
-						<img th:src="@{/img/hardware/6.jpg}" style="max-width: 80%"
+					<div class="col-md-2 mr-auto py-2" >
+						<img th:src="@{/img/software/2.jpg}" style="max-width: 100%"
 							class="card-img" alt="...">
 					</div>
 				</div>
 			</div>
 			<div class="card mb-3">
 				<div class="row no-gutters">
-					<div class="col-md-2">
-						<img th:src="@{/img/hardware/12.jpg}" style="max-width: 80%"
+					<div class="col-md-2 py-5">
+						<img th:src="@{/img/software/3.jpg}" style="max-width: 100%"
 							class="card-img" alt="...">
 					</div>
 					<div class="col-md-10">
 						<div class="card-body">
-							<h5 class="card-title">Bocinas</h5>
-							<p class="card-text">Son dispositivos transductores, esto es, son capaces de transformar un tipo de energía en otro diferente, y en el caso de las bocinas, estas convierten energía eléctrica en energía sonora, recibiendo las señales eléctricas de audio procedentes de la computadora, transformándolas en sonido. </p>
+							<h5 class="card-title">Microsoft Power Point</h5>
+							<p class="card-text">Microsoft PowerPoint es un programa de presentación desarrollado por la empresa Microsoft para sistemas operativos Windows, macOS y últimamente para Android y iOS. Viene integrado en el paquete ofimático llamado Microsoft Office como un elemento más, que puede aprovechar las ventajas que le ofrecen los demás componentes del equipo para obtener un resultado óptimo.</p>
 						</div>
 					</div>
 				</div>
@@ -108,12 +106,12 @@ También puede considerarse un periférico de entrada/salida si el monitor tiene
 				<div class="row no-gutters">
 					<div class="col-md-10">
 						<div class="card-body">
-							<h5 class="card-title">Proyector</h5>
-							<p class="card-text">El proyector digital es un aparato encargado de obtener mediante un puerto, señales de vídeo eminentes de la computadora, procesar la señal digital y decodificarla para que así pueda ser transmitida a través de luz a unos microespejos que son los encargados de la proyección digital.</p>
+							<h5 class="card-title">Microsoft Publisher</h5>
+							<p class="card-text">Microsoft Publisher es la aplicación de autoedición de Microsoft. A menudo es considerado como un programa para principiantes o de «nivel de entrada», que difiere del procesador de textos Microsoft Word en que se hace hincapié en el diseño y la maquetación de las páginas, más que en el proceso y corrección de textos.</p>
 						</div>
 					</div>
 					<div class="col-md-2 py-4">
-						<img th:src="@{/img/hardware/16.jpg}" style="max-width: 80%"
+						<img th:src="@{/img/software/4.jpg}" style="max-width: 80%"
 							class="card-img" alt="...">
 					</div>
 				</div>

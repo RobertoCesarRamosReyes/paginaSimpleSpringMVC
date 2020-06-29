@@ -10,7 +10,7 @@
 	content="Página informativa hecha con Spring Framework">
 <meta name="author" content="Roberto Cesar Ramos Reyes">
 
-<title>Hardware</title>
+<title th:text="${titulo}"></title>
 
 <!-- Bootstrap core CSS -->
 <link rel="stylesheet" type="text/css"
@@ -34,9 +34,9 @@
 					<li class="nav-item active"><a class="nav-link" th:href="@{/}">Home
 							<span class="sr-only">(current)</span>
 					</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Hardware</a>
+					<li class="nav-item"><a class="nav-link" th:href="@{/hardware}">Hardware</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" th:href="@{/software}">Software</a>
+					<li class="nav-item"><a class="nav-link" href="#">Software</a>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="#">Extras</a></li>
 				</ul>
@@ -52,16 +52,15 @@
 			<div class="col-md-4 py-5">
 				<div class="list-group">
 					<a href="#" class="list-group-item list-group-item-action active disabled text-center">
-					    Tipos de hardware
+					    Tipos de software
 					  </a>
-						<a th:href="@{/hardware/entrada/}" class="list-group-item list-group-item-action">Hardware de entrada</a> 
-						<a th:href="@{/hardware/proceso/}" class="list-group-item list-group-item-action">Hardware de proceso</a> 
-						<a th:href="@{/hardware/salida/}" class="list-group-item list-group-item-action">Hardware de salida</a> 
-						<a th:href="@{/hardware/almacenamiento/}" class="list-group-item list-group-item-action">Hardware de almacenamiento</a> 
+						<a th:href="@{/software/aplicacion/}" class="list-group-item list-group-item-action">Software de aplicación</a> 
+						<a th:href="@{/software/desarrollo/}" class="list-group-item list-group-item-action">Software de desarrollo</a> 
+						<a th:href="@{/software/sistemasOperativos/}" class="list-group-item list-group-item-action">Sistemas operativos</a> 
 				</div>
 			</div>
 			<div class="col-md-8 col-xs-12 text-justify ">
-				<h3 class="text-center ">El hardware</h3>
+				<h3 class="text-center " th:text="${titulo}"></h3>
 				<p>La palabra hardware en informática se refiere a las partes
 					físicas, tangibles, de un sistema informático, sus componentes
 					eléctricos, electrónicos, electromecánicos y mecánicos. Los cables,
@@ -101,73 +100,73 @@
 
 				<div class="col-lg-3 col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100"> <img
-						class="img-fluid img-thumbnail" th:src="@{/img/hardware/1.jpg}"
+						class="img-fluid img-thumbnail"  th:src="@{/img/software/1.jpg}"
 						alt="">
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100"> <img
-						class="img-fluid img-thumbnail" th:src="@{/img/hardware/2.jpg}"
+						class="img-fluid img-thumbnail" th:src="@{/img/software/2.jpg}"
 						alt="">
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100"> <img
-						class="img-fluid img-thumbnail" th:src="@{/img/hardware/3.jpg}"
+						class="img-fluid img-thumbnail" th:src="@{/img/software/3.jpg}"
 						alt="">
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100"> <img
-						class="img-fluid img-thumbnail" th:src="@{/img/hardware/4.jpg}"
+						class="img-fluid img-thumbnail" style="max-height: 60%" th:src="@{/img/software/4.jpg}"
 						alt="">
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100"> <img
-						class="img-fluid img-thumbnail" th:src="@{/img/hardware/5.jpg}"
+						class="img-fluid img-thumbnail" th:src="@{/img/software/5.jpg}"
 						alt="">
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100"> <img
-						class="img-fluid img-thumbnail" th:src="@{/img/hardware/6.jpg}"
+						class="img-fluid img-thumbnail" style="max-width: 90%" th:src="@{/img/software/6.jpg}"
 						alt="">
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100"> <img
-						class="img-fluid img-thumbnail" th:src="@{/img/hardware/7.jpg}"
+						class="img-fluid img-thumbnail" th:src="@{/img/software/8.jpg}"
 						alt="">
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100"> <img
-						class="img-fluid img-thumbnail" th:src="@{/img/hardware/8.jpg}"
+						class="img-fluid img-thumbnail" style="max-height: 70%" th:src="@{/img/software/7.jpg}"
 						alt="">
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100"> <img
-						class="img-fluid img-thumbnail" th:src="@{/img/hardware/9.jpg}"
+						class="img-fluid img-thumbnail" style="max-height: 50%" th:src="@{/img/software/9.jpg}"
 						alt="">
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100"> <img
-						class="img-fluid img-thumbnail" th:src="@{/img/hardware/10.jpg}"
+						class="img-fluid img-thumbnail" th:src="@{/img/software/10.jpg}"
 						alt="">
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100"> <img
-						class="img-fluid img-thumbnail" th:src="@{/img/hardware/11.jpg}"
+						class="img-fluid img-thumbnail" th:src="@{/img/software/11.jpg}"
 						alt="">
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100"> <img
-						class="img-fluid img-thumbnail" th:src="@{/img/hardware/12.jpg}"
+						class="img-fluid img-thumbnail" style="max-height: 50%" th:src="@{/img/software/12.jpg}"
 						alt="">
 					</a>
 				</div>

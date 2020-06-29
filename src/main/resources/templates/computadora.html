@@ -36,7 +36,7 @@
 					</a></li>
 					<li class="nav-item"><a class="nav-link" th:href="@{/hardware}">Hardware</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="#">Software</a>
+					<li class="nav-item"><a class="nav-link" th:href="@{/software}">Software</a>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="#">Extras</a></li>
 				</ul>
@@ -105,7 +105,7 @@
 				  <div class="card-body text-center">
 				    <h5 class="card-title">Software</h5>
 				    <p class="card-text">Programas que dan funcionalidad a la computadora</p>
-				    <a href="#" class="btn btn-primary">Ver mas información</a>
+				    <a th:href="@{/software}" class="btn btn-primary">Ver mas información</a>
 				  </div>
 				</div>
 			</div>
